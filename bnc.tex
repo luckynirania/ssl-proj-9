@@ -1,0 +1,43 @@
+\newcommand{\myteam}{Project 9} % Name of your team goes here.
+\title{D-regular graph(Directed | Undirected)\footnote{This is a report on the course 
+    project for the course CS 213 Software System Lab}} % You may change the title if you want.
+\author{\myteam\footnote{Email IDs of team members:170010009\texttt{@iitdh.ac.in},170030038\texttt{@iitdh.ac.in}}\\
+    {\small Lokesh Nirania (170010009),} % Here arrange the the member's name and roll nos.  
+    {\small Mandeep Bawa (170030038)}\\ % in the increasing order of roll nos.
+    {\small Computer Science and Engineering, IIT Dharwad}\\% Do not change this.
+}
+\date{\today}
+
+\documentclass[12pt]{article}
+%\usepackage{fullpage}
+\usepackage{hyperref}
+\begin{document}
+\maketitle
+
+\begin{abstract} % You may change the abstract if you want.
+This paper describes the techniques followed by our team to implement a powershell script to make a \textit{graph in latex} as a part of the course CS 213 Software System Lab.
+\end{abstract}
+
+\section{Working Of Code}
+Our program takes input from user for undirected or directed graph. After this step it ask if user want to give \textit{matrix file}.   
+\subsection{Matrix file}
+A n*n matrix file is required for this program to work. Any char or integer(0 for no link) can be given in a cell of matrix. These will represent edge labels in the formed graph.
+If user does not want to give a matrix then our program ask for the number of vertices required in graph.Then our program execute and final pdf is displayed.
+\section{Step by Step Improvement}
+Firstly program for simple directed graph was made using only latex in which we need to manually set number of vertices in a file and execute.
+Then we tried our best to make it user friendly using powershell.\\
+All the Latex syntax were written in a file using powershell.\\
+Powershell takes input from user and write a file in latex.\\
+After the file has been written, powershell will execute the latex file and will display the PDF on screeen.
+It will automatically remove all the *tex,*log files after the work is done.
+
+
+
+%A paper by Tao and Vu~\cite{TaoV17} talks about something quite different but this is how you can refer to a research paper/books etc.
+%You can also refer to an online link~\cite{bworld}. 
+
+%\bibliographystyle{abbrv}
+%\bibliography{bnc}
+
+\end{document}
+This is never printed
