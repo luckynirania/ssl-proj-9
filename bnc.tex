@@ -9,18 +9,50 @@
 \date{\today}
 
 \documentclass[12pt]{article}
-%\usepackage{fullpage}
+\usepackage{fullpage}
 \usepackage{hyperref}
 \begin{document}
 \maketitle
 
 \begin{abstract} % You may change the abstract if you want.
+This paper describes the working of the code \textbf{ps\_graph.ps1} written in powershell script to make a \textit{d-regular graph} as a part of the course project in CS 213 Software System Lab.
+=======
 This paper describes the techniques followed by our team to implement a powershell script to make a \textit{graph in latex} as a part of the course CS 213 Software System Lab.
 \end{abstract}
 
 \section{Working Of Code}
 Our program takes input from user for undirected or directed graph. After this step it ask if user want to give \textit{matrix file}.   
 \subsection{Matrix file}
+\begin{itemize}
+\item{Any m*n matrix file is required for this program to work.}
+\item{Any char or integer(0 for no link) can be given in a cell of input matrix. These will represent edge labels in the output graph.}
+\item{If matrix input is not valid (not given as a square matrix or left some cells empty) then our program filter the matrix input and give default value as 0 for empty spaces.}
+\item{If user does not want to give a matrix then our program ask for the number of vertices required in output graph.}
+\item{After this program execute and final pdf is displayed.}
+\end{itemize}
+\section{Step by Step Improvement}
+Initially program for simple directed graph was made using only latex in which number of vertices were given manually in a tex file. \\
+Then we tried our best to make it user friendly using powershell.\\
+All the Latex syntax were written in a file using powershell.\\
+Powershell takes input from user and write a file in latex.\\
+After the file has been written, powershell will execute the latex file and will show the PDF. \\
+It will automatically remove all the *tex,*log files after the work is done. \\
+
+\section{Applications in real life}
+\begin{enumerate}
+\item{It can be used to design a \textbf{map} for road networks which can be named distincty using distinct chars and integers 0-9 in input matrix.}
+\item{It can be used for building \textbf{network frameworks} and to show the permission access to various users.}
+\item{Facebook use graphs to \textbf{find mutual friends} and give new friend suggestions. }
+\item{In computer science it is used to represent the \textbf{flow of computation}.}
+\item{\textbf{Google Maps} uses graphs for building transportation systems,where intersection of two(or more) roads are considered to be a vertex and the road connecting two vertices is considered to be an edge.}
+\end{enumerate}
+\quad
+\quad
+\begin{center}
+\quad
+\quad
+- - - - - - - - - End of report - - - - - - - - -
+\end{center}
 A n*n matrix file is required for this program to work. Any char or integer(0 for no link) can be given in a cell of matrix. These will represent edge labels in the formed graph.
 If user does not want to give a matrix then our program ask for the number of vertices required in graph.Then our program execute and final pdf is displayed.
 \section{Step by Step Improvement}
@@ -30,6 +62,7 @@ All the Latex syntax were written in a file using powershell.\\
 Powershell takes input from user and write a file in latex.\\
 After the file has been written, powershell will execute the latex file and will display the PDF on screeen.
 It will automatically remove all the *tex,*log files after the work is done.
+
 
 
 
